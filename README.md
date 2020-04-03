@@ -98,3 +98,7 @@ func:    -> key word in Go to define a function
 newCard: -> Define a function called 'newCard'
 string:  -> When executed, this function will return a value of type 'string'
 ```
+
+```
+Files in the same package do not have to be imported into each other
+```
