@@ -18,13 +18,19 @@ func main() {
 	// := this will let the Go complier to define the type
 	// we only use this on the very initial definition of a var
 	// card := "Ace of Spades"
-	card := newCard()
+	// card := newCard()
+	cards := []string{"Ace of Diamonds", newCard()}
+	// assigning cards as new var
+	cards = append(cards, "Six of Spades")
 
 	// if i have to re assign a new value later
 	// no need to put ':=', doing this will throw error
 	// card = "Five of Diamonds"
 
-	fmt.Println(card)
+	// Iterating over the "slice"
+	for i, card := range cards{
+		fmt.Println(i, card)
+	}
 }
 
 // new function
