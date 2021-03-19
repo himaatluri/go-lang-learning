@@ -6,7 +6,7 @@ The `package main` is used to build `executable` package, anything other means w
 
 > The purpose of `package` in Go is to group together code with similar purpose
 
-> We use `main` in a package to tell Go that ewe want it to be turned into a file that can be executed
+> We use `main` in a package to tell Go that we want it to be turned into a file that can be executed
 ```
 
 ```
