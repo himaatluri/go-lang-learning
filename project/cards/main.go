@@ -18,19 +18,41 @@ func main() {
 	// := this will let the Go complier to define the type
 	// we only use this on the very initial definition of a var
 	// card := "Ace of Spades"
-	card := newCard()
+
+	// Definig a Slice of type String
+	cards := []string{"Ace of Diamonds", newCard()}
+	cards = append(cards, "Six of Spades")
+
+	fmt.Println(cards)
+
+	// card := newCard()
+
+	for i, cards := range cards {
+		fmt.Println(i, cards)
+	}
 
 	// if i have to re assign a new value later
 	// no need to put ':=', doing this will throw error
 	// card = "Five of Diamonds"
 
-	fmt.Println(card)
+	// fmt.Println(card)
 }
 
-// new function
+// new function to generate cards
 
 // string: is needed to tell what data type we are going to return
 func newCard() string {
 	// return the statement when this func is called
 	return "Five of Diamonds"
 }
+
+// Slices and For loops
+
+// There are two types of data types in Go to handle
+// Lists:
+// 1) Array: Fixed length list of things
+// 2) Slice: An array that can grow or shrink
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+// They must be defined with a record of the same type, i.e
+// an array can have all the records as either string or an int
+// but not a combo/different types.
