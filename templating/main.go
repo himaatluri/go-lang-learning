@@ -10,6 +10,7 @@ type ConfigItems struct {
 	Vars string
 }
 
+// https://pkg.go.dev/text/template#example-Template
 func main() {
 	devCfg := ConfigItems{"dev", "tst"}
 	tmpl, err := template.New("dev").Parse("{{.Vars}} in environment {{.Envr}}")
